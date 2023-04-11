@@ -60,7 +60,6 @@ function load_flight_list() {
     ) 
     {
       {
-        
         var Date = '"Date"' + ":" + '"' +  flightRawList[i].Date + '", ';
         var Time = '"Time"' + ":" + '"' +  flightRawList[i].Time + '", ';
         var Flight = '"Flight"' + ":" + '"' +  flightRawList[i].Flight + '", ';
