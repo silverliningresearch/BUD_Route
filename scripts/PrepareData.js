@@ -169,11 +169,12 @@ function prepareInterviewData() {
       flight.Date_Time = flight.Time;
       today_flight_list.push(flight);
     }
+    
     //currentMonth: 02-2023
     //flight.Date: 08-02-2023
-    if (currentMonth == flight.Date.substring(3,10)) { 
+    if (currentQuarter ==  getQuarterFromMonth(flight.Date.substring(3,5))) { 
       this_month_flight_list.push(flight);
-    }				   
+    }		   
   }
  
   //add quota data

@@ -1,8 +1,7 @@
 /************************************/
 function CalculateAirportAirLineReport() {
   prepareInterviewData();
-  CalculateDOOP(); //add DOOP to quota list
-
+  CalculateDOOP(); //add DOOP to flight list
   var daily_plan_data_temp;
   daily_plan_data_temp = [];
   daily_plan_data_temp.length = 0;
@@ -67,7 +66,6 @@ function CalculateAirportAirLineReport() {
       if (row.Airport_Airline.toUpperCase() == quota_data[j].Airport_Airline.toUpperCase()) 
       {
         if ( quota_data[j].Difference < 0) {
-          row.doop = quota_data[j].doop;
           row.Completed = quota_data[j].Completed;
           row.Completed_percent = quota_data[j].Completed_percent;
           row.Difference = quota_data[j].Difference;
@@ -92,7 +90,7 @@ function CalculateAirportAirLineReport() {
     row = daily_plan_data_temp[i];
     row.Priority = 0;
     daily_plan_data.push(row);
-    if(i< daily_plan_data_temp.length*0.25)
+    if((i< daily_plan_data_temp.length*0.25) || (row.remaining_flights<=3))
     {
       row.Priority = 1;
     }
@@ -113,10 +111,25 @@ function getDOOP(date) //"07-02-2023"
 
   return d.getDay(); //Sun: 0; Sat: 6
 }
-function CalculateDOOP() {
-  for (i = 0; i < quota_data.length; i++) {
-    quota_data[i].doop = " ";
 
+function isNotThePastDate(date) //"07-02-2023"
+{
+  var current_day_of_month =  new Date().getDate();
+  var current_month =  new Date().getMonth() + 1;
+
+  var parts = date.split("-")
+  var flight_day = parseInt(parts[0]);
+  var Month = parseInt(parts[1]);
+  
+  var result = ((flight_day >= current_day_of_month) || (Month>current_month));
+
+  return (result);
+}
+
+function CalculateDOOP() {
+  for (i = 0; i < daily_plan_data.length; i++) {
+    daily_plan_data[i].doop = " ";
+    daily_plan_data[i].remaining_flights = 0;
     var mon =0;
     var tue =0;
     var wed =0;
@@ -125,9 +138,15 @@ function CalculateDOOP() {
     var sat =0;
     var sun =0;
 
+    var remaining_flights = 0;
     for (j = 0; j < this_month_flight_list.length; j++) {
-      if (quota_data[i].Airport_Airline.toUpperCase() == this_month_flight_list[j].Airport_Airline.toUpperCase()) 
+      if (daily_plan_data[i].Flight.toUpperCase() == this_month_flight_list[j].Flight.toUpperCase()) 
       {
+        //get remaining_flights
+        if (isNotThePastDate(this_month_flight_list[j].Date)) {
+          remaining_flights++;
+        }
+
         switch (getDOOP( this_month_flight_list[j].Date)) {
           case 0:
             sun = "7";
@@ -155,7 +174,7 @@ function CalculateDOOP() {
         }
       }
     }
-    quota_data[i].doop =[mon, tue, wed, thu, fri, sat, sun].join('');
-
+    daily_plan_data[i].doop =[mon, tue, wed, thu, fri, sat, sun].join('');
+    daily_plan_data[i].remaining_flights = remaining_flights;
   }
 }									 
