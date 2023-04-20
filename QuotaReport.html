@@ -29,6 +29,7 @@
 
         //define header
         data.addColumn('string', 'Airport_Airline');
+        data.addColumn('number', 'Remaining Flights');        
         data.addColumn('number', 'Quota');
         data.addColumn('number', 'Completed');
 				data.addColumn('number', 'Missing');
@@ -40,6 +41,7 @@
           data.addRows([
           [
             row.Airport_Airline, 
+            Number(row.remaining_flights),                
             Number(row.Quota),
             Number(row.Completed), 
             Number(row.Difference), 
@@ -62,6 +64,13 @@
         });
   
         // Create table
+        data.setProperty(0, 0, 'style', 'width:100px');
+        data.setProperty(0, 1, 'style', 'width:100px');
+        data.setProperty(0, 2, 'style', 'width:100px');
+        data.setProperty(0, 3, 'style', 'width:100px');
+        data.setProperty(0, 4, 'style', 'width:100px');
+        data.setProperty(0, 5, 'style', 'width:100px');
+
         var tableChart = new google.visualization.ChartWrapper({
           'chartType': 'Table',
           'containerId': 'table_div',
@@ -79,13 +88,10 @@
         document.getElementById("filter_div").style.display = "none";
         dashboard.draw(view);
 
-        //Update time info
-        // document.getElementById("download_time").innerHTML = "Data updated: " + download_time;
-
-        var overall_status = "Total quota: " + total_quota;
-        overall_status += " - Total completed: " + total_completed;
-        //overall_status += " - Quota completed: " + total_quota_completed;
-        document.getElementById("overall_status").innerHTML = overall_status + " | " + "Data updated at " + download_time;
+         //overall_status
+         var overall_status =  "Total quota: " + total_quota;
+        overall_status += " - Total completed: " + total_completed + " (" + total_completed_percent + "%)";
+        document.getElementById("overall_status").innerHTML =overall_status + " | " + "Data updated at " + download_time;
       }
     </script>
   </head>
