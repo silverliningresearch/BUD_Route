@@ -60,7 +60,7 @@ function initCurrentTimeVars() {
       total_quota = 10500;
       break;
     case "2023-Q3":
-      total_quota = 10500;
+      total_quota = 10350;
       break;
     case "2023-Q4":
       total_quota = 10500;
@@ -133,7 +133,8 @@ function prepareInterviewData() {
   quota_data = [];
   quota_data.length = 0;
   for (i = 0; i < quota_data_temp.length; i++) {
-    //if (quota_data_temp[i].Quarter == currentQuarter)
+    if ((quota_data_temp[i].Quota>0)
+    && (quota_data_temp[i].Quarter == currentQuarter))
     {
       quota_data.push(quota_data_temp[i]);
     }
