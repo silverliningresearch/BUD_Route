@@ -1474,12 +1474,12 @@
 {
     "Airport_Airline": "ICN-LO",
     "Quarter": "2024-Q1",
-    "Quota": 150
+    "Quota": 155
 },
 {
     "Airport_Airline": "WAW-LO",
     "Quarter": "2024-Q1",
-    "Quota": 150
+    "Quota": 155
 },
 {
     "Airport_Airline": "BHX-LS",
