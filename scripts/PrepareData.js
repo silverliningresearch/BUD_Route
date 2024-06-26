@@ -217,9 +217,10 @@ function prepareInterviewData() {
     
     //currentMonth: 02-2023
     //flight.Date: 08-02-2023
-    if (currentQuarter == getQuarterFromMonth(interview["InterviewEndDate"].substring(5,7), interview["InterviewEndDate"].substring(0,4))) { 
+
+    if (currentQuarter ==  getQuarterFromMonth(flight.Date.substring(3,5), flight.Date.substring(6,10))) { 
       this_month_flight_list.push(flight);
-    }		   
+    }		
   }
  
   //add quota data
@@ -240,5 +241,4 @@ function prepareInterviewData() {
   // console.log("today_flight_list: ", today_flight_list);
   // console.log("quota_data: ", quota_data);
   // console.log("daily_plan_data: ", daily_plan_data);
-  // console.log("interview_data: ", interview_data);
 }
