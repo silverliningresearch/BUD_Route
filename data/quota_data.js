@@ -2626,7 +2626,7 @@
 
 
 
- {
+       {
         "Airport_Airline": "TLV-6H",
         "Quarter": "2024-Q3",
         "Quota": 50
@@ -2764,17 +2764,17 @@
     {
         "Airport_Airline": "AGP-FR",
         "Quarter": "2024-Q3",
-        "Quota": 14
+        "Quota": 13
     },
     {
         "Airport_Airline": "AHO-FR",
         "Quarter": "2024-Q3",
-        "Quota": 14
+        "Quota": 13
     },
     {
         "Airport_Airline": "ALC-FR",
         "Quarter": "2024-Q3",
-        "Quota": 18
+        "Quota": 17
     },
     {
         "Airport_Airline": "ARN-FR",
@@ -2854,12 +2854,12 @@
     {
         "Airport_Airline": "CFU-FR",
         "Quarter": "2024-Q3",
-        "Quota": 16
+        "Quota": 15
     },
     {
         "Airport_Airline": "CHQ-FR",
         "Quarter": "2024-Q3",
-        "Quota": 12
+        "Quota": 11
     },
     {
         "Airport_Airline": "CIA-FR",
@@ -2899,7 +2899,7 @@
     {
         "Airport_Airline": "FAO-FR",
         "Quarter": "2024-Q3",
-        "Quota": 10
+        "Quota": 7
     },
     {
         "Airport_Airline": "GOT-FR",
@@ -2914,12 +2914,12 @@
     {
         "Airport_Airline": "JMK-FR",
         "Quarter": "2024-Q3",
-        "Quota": 8
+        "Quota": 7
     },
     {
         "Airport_Airline": "JSI-FR",
         "Quarter": "2024-Q3",
-        "Quota": 8
+        "Quota": 7
     },
     {
         "Airport_Airline": "LIS-FR",
@@ -2974,12 +2974,12 @@
     {
         "Airport_Airline": "PFO-FR",
         "Quarter": "2024-Q3",
-        "Quota": 20
+        "Quota": 19
     },
     {
         "Airport_Airline": "PMI-FR",
         "Quarter": "2024-Q3",
-        "Quota": 20
+        "Quota": 18
     },
     {
         "Airport_Airline": "PMO-FR",
@@ -2999,7 +2999,7 @@
     {
         "Airport_Airline": "PVK-FR",
         "Quarter": "2024-Q3",
-        "Quota": 8
+        "Quota": 7
     },
     {
         "Airport_Airline": "RHO-FR",
@@ -3079,7 +3079,7 @@
     {
         "Airport_Airline": "ZTH-FR",
         "Quarter": "2024-Q3",
-        "Quota": 12
+        "Quota": 11
     },
     {
         "Airport_Airline": "DXB-FZ",
@@ -3219,12 +3219,12 @@
     {
         "Airport_Airline": "AHO-W6",
         "Quarter": "2024-Q3",
-        "Quota": 14
+        "Quota": 16
     },
     {
         "Airport_Airline": "ALC-W6",
         "Quarter": "2024-Q3",
-        "Quota": 22
+        "Quota": 26
     },
     {
         "Airport_Airline": "AMM-W6",
@@ -3289,12 +3289,12 @@
     {
         "Airport_Airline": "CFU-W6",
         "Quarter": "2024-Q3",
-        "Quota": 19
+        "Quota": 18
     },
     {
         "Airport_Airline": "CHQ-W6",
         "Quarter": "2024-Q3",
-        "Quota": 12
+        "Quota": 13
     },
     {
         "Airport_Airline": "CPH-W6",
@@ -3339,7 +3339,7 @@
     {
         "Airport_Airline": "FNC-W6",
         "Quarter": "2024-Q3",
-        "Quota": 8
+        "Quota": 9
     },
     {
         "Airport_Airline": "GHV-W6",
@@ -3359,7 +3359,7 @@
     {
         "Airport_Airline": "HER-W6",
         "Quarter": "2024-Q3",
-        "Quota": 12
+        "Quota": 13
     },
     {
         "Airport_Airline": "HRG-W6",
@@ -3379,7 +3379,7 @@
     {
         "Airport_Airline": "JTR-W6",
         "Quarter": "2024-Q3",
-        "Quota": 8
+        "Quota": 9
     },
     {
         "Airport_Airline": "KEF-W6",
@@ -3394,7 +3394,7 @@
     {
         "Airport_Airline": "LCA-W6",
         "Quarter": "2024-Q3",
-        "Quota": 40
+        "Quota": 41
     },
     {
         "Airport_Airline": "LGW-W6",
@@ -3424,7 +3424,7 @@
     {
         "Airport_Airline": "MLA-W6",
         "Quarter": "2024-Q3",
-        "Quota": 22
+        "Quota": 23
     },
     {
         "Airport_Airline": "MXP-W6",
@@ -3459,17 +3459,17 @@
     {
         "Airport_Airline": "RHO-W6",
         "Quarter": "2024-Q3",
-        "Quota": 19
+        "Quota": 18
     },
     {
         "Airport_Airline": "RMO-W6",
         "Quarter": "2024-Q3",
-        "Quota": 8
+        "Quota": 9
     },
     {
         "Airport_Airline": "SKG-W6",
         "Quarter": "2024-Q3",
-        "Quota": 12
+        "Quota": 14
     },
     {
         "Airport_Airline": "SKP-W6",
@@ -3524,7 +3524,7 @@
     {
         "Airport_Airline": "ZTH-W6",
         "Quarter": "2024-Q3",
-        "Quota": 19
+        "Quota": 21
     },
     {
         "Airport_Airline": "AYT-XC",
@@ -3535,8 +3535,12 @@
         "Airport_Airline": "AYT-XQ",
         "Quarter": "2024-Q3",
         "Quota": 50
+    },
+    {
+        "Airport_Airline": "SZX-HU",
+        "Quarter": "2024-Q3",
+        "Quota": 150
     }
-
 
 
         
