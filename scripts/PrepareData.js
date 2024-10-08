@@ -202,8 +202,16 @@ function prepareInterviewData() {
   this_month_flight_list.length = 0;
   
   for (i = 0; i < flight_list_full.length; i++) {
-    let flight = flight_list_full[i];
+   
+    //special for BUD
+    if (flight_list_full[i].Flight.substring(0,3) == "TOM") flight_list_full[i].AirlineCode = "TOM";
 
+    if ((flight_list_full[i].Flight.substring(0,3) == "EZY") 
+      || (flight_list_full[i].Flight.substring(0,3) == "EJU") 
+    || (flight_list_full[i].Flight.substring(0,3) == "EZS")) flight_list_full[i].AirlineCode = "U2";
+
+    let flight = flight_list_full[i];
+    
     //airport_airline
     var airport_airline = flight.Dest + "-" + flight.AirlineCode; //code for compare
     flight.Airport_Airline = airport_airline;
@@ -215,6 +223,7 @@ function prepareInterviewData() {
     { 
       flight.Date_Time = flight.Date.substring(6,10) + "-" +  flight.Date.substring(3,5) + "-" + flight.Date.substring(0,2) + " " + flight.Time;
       //flight.Date_Time = flight.Time;
+
       today_flight_list.push(flight);
     }
     
