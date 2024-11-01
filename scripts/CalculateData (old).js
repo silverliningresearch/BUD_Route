@@ -14,7 +14,7 @@ function CalculateAirportAirLineReport() {
   var not_in_quota_list =[];
   for (i = 0; i < interview_data.length; i++) 
   {
-    total_completed = total_completed + interview_data[i].completed_interviews;
+    total_completed++;
     found_temp = 0;
     for (j = 0; j < quota_data.length; j++) 
     {
@@ -34,7 +34,7 @@ function CalculateAirportAirLineReport() {
     for (j = 0; j < interview_data.length; j++) {
       if (row.Airport_Airline.toUpperCase() == interview_data[j].Airport_Airline.toUpperCase()) 
       { 
-        row.Completed + interview_data[i].completed_interviews;;
+        row.Completed++;
       }
     }
 
