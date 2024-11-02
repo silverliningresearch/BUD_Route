@@ -174,7 +174,7 @@ function prepareInterviewData() {
         var airline_code = ""
         if (interview["AirlineCode"])  airline_code = interview["AirlineCode"];
 
-        interview.Airport_Airline =   airport_code + "-" + airline_code + '", ';
+        interview.Airport_Airline =   airport_code + "-" + airline_code ;
         interview.InterviewEndDate =   interview["Interview_Date"] ;
         interview_data.push(interview);
       }
