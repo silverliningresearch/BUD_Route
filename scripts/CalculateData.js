@@ -44,8 +44,6 @@ function CalculateAirportAirLineReport() {
 
     row.Completed_percent =(100*(row.Completed/row.Quota)).toFixed(0);
 
-    //total_completed = total_completed + row.Completed;
-        
     if ( row.Difference > 0) { //over quota
       total_quota_completed = total_quota_completed +row.Quota*1;
     }
