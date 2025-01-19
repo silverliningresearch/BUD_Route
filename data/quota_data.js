@@ -4497,7 +4497,8 @@
 
 
 
-    {
+
+ {
         "Airport_Airline": "TLV-6H",
         "Quarter": "2025-Q1",
         "Quota": 50
@@ -4608,24 +4609,14 @@
         "Quota": 100
     },
     {
-        "Airport_Airline": "ACE-FR",
-        "Quarter": "2025-Q1",
-        "Quota": 4
-    },
-    {
         "Airport_Airline": "AGP-FR",
         "Quarter": "2025-Q1",
-        "Quota": 24
-    },
-    {
-        "Airport_Airline": "AHO-FR",
-        "Quarter": "2025-Q1",
-        "Quota": 4
+        "Quota": 31
     },
     {
         "Airport_Airline": "ALC-FR",
         "Quarter": "2025-Q1",
-        "Quota": 19
+        "Quota": 18
     },
     {
         "Airport_Airline": "ARN-FR",
@@ -4644,11 +4635,6 @@
     },
     {
         "Airport_Airline": "BER-FR",
-        "Quarter": "2025-Q1",
-        "Quota": 50
-    },
-    {
-        "Airport_Airline": "BFS-FR",
         "Quarter": "2025-Q1",
         "Quota": 50
     },
@@ -4673,11 +4659,6 @@
         "Quota": 50
     },
     {
-        "Airport_Airline": "BOH-FR",
-        "Quarter": "2025-Q1",
-        "Quota": 50
-    },
-    {
         "Airport_Airline": "BRI-FR",
         "Quarter": "2025-Q1",
         "Quota": 50
@@ -4696,16 +4677,6 @@
         "Airport_Airline": "CAG-FR",
         "Quarter": "2025-Q1",
         "Quota": 50
-    },
-    {
-        "Airport_Airline": "CFU-FR",
-        "Quarter": "2025-Q1",
-        "Quota": 18
-    },
-    {
-        "Airport_Airline": "CHQ-FR",
-        "Quarter": "2025-Q1",
-        "Quota": 12
     },
     {
         "Airport_Airline": "CIA-FR",
@@ -4738,14 +4709,9 @@
         "Quota": 50
     },
     {
-        "Airport_Airline": "EMA-FR",
-        "Quarter": "2025-Q1",
-        "Quota": 50
-    },
-    {
         "Airport_Airline": "FAO-FR",
         "Quarter": "2025-Q1",
-        "Quota": 10
+        "Quota": 12
     },
     {
         "Airport_Airline": "GOT-FR",
@@ -4765,7 +4731,7 @@
     {
         "Airport_Airline": "LPA-FR",
         "Quarter": "2025-Q1",
-        "Quota": 18
+        "Quota": 20
     },
     {
         "Airport_Airline": "LPL-FR",
@@ -4785,7 +4751,7 @@
     {
         "Airport_Airline": "MLA-FR",
         "Quarter": "2025-Q1",
-        "Quota": 28
+        "Quota": 38
     },
     {
         "Airport_Airline": "MRS-FR",
@@ -4815,12 +4781,7 @@
     {
         "Airport_Airline": "PFO-FR",
         "Quarter": "2025-Q1",
-        "Quota": 30
-    },
-    {
-        "Airport_Airline": "PMI-FR",
-        "Quarter": "2025-Q1",
-        "Quota": 8
+        "Quota": 22
     },
     {
         "Airport_Airline": "PMO-FR",
@@ -4838,19 +4799,9 @@
         "Quota": 50
     },
     {
-        "Airport_Airline": "RHO-FR",
-        "Quarter": "2025-Q1",
-        "Quota": 18
-    },
-    {
-        "Airport_Airline": "RMI-FR",
-        "Quarter": "2025-Q1",
-        "Quota": 50
-    },
-    {
         "Airport_Airline": "SKG-FR",
         "Quarter": "2025-Q1",
-        "Quota": 56
+        "Quota": 75
     },
     {
         "Airport_Airline": "SNN-FR",
@@ -4875,7 +4826,7 @@
     {
         "Airport_Airline": "TFS-FR",
         "Quarter": "2025-Q1",
-        "Quota": 22
+        "Quota": 20
     },
     {
         "Airport_Airline": "TIA-FR",
@@ -4905,22 +4856,7 @@
     {
         "Airport_Airline": "VLC-FR",
         "Quarter": "2025-Q1",
-        "Quota": 15
-    },
-    {
-        "Airport_Airline": "WMI-FR",
-        "Quarter": "2025-Q1",
-        "Quota": 50
-    },
-    {
-        "Airport_Airline": "ZTH-FR",
-        "Quarter": "2025-Q1",
-        "Quota": 8
-    },
-    {
-        "Airport_Airline": "SSH-FT",
-        "Quarter": "2025-Q1",
-        "Quota": 50
+        "Quota": 18
     },
     {
         "Airport_Airline": "DXB-FZ",
@@ -4941,6 +4877,11 @@
         "Airport_Airline": "MAD-IB",
         "Quarter": "2025-Q1",
         "Quota": 150
+    },
+    {
+        "Airport_Airline": "TLV-IZ",
+        "Quarter": "2025-Q1",
+        "Quota": 50
     },
     {
         "Airport_Airline": "BEG-JU",
@@ -4998,11 +4939,6 @@
         "Quota": 50
     },
     {
-        "Airport_Airline": "NCL-LS",
-        "Quarter": "2025-Q1",
-        "Quota": 50
-    },
-    {
         "Airport_Airline": "ZRH-LX",
         "Quarter": "2025-Q1",
         "Quota": 100
@@ -5043,22 +4979,7 @@
         "Quota": 50
     },
     {
-        "Airport_Airline": "EDI-RK",
-        "Quarter": "2025-Q1",
-        "Quota": 50
-    },
-    {
-        "Airport_Airline": "MAN-RK",
-        "Quarter": "2025-Q1",
-        "Quota": 50
-    },
-    {
         "Airport_Airline": "OTP-RO",
-        "Quarter": "2025-Q1",
-        "Quota": 50
-    },
-    {
-        "Airport_Airline": "HRG-SM",
         "Quarter": "2025-Q1",
         "Quota": 50
     },
@@ -5071,16 +4992,6 @@
         "Airport_Airline": "IST-TK",
         "Quarter": "2025-Q1",
         "Quota": 150
-    },
-    {
-        "Airport_Airline": "LGW-TOM",
-        "Quarter": "2025-Q1",
-        "Quota": 50
-    },
-    {
-        "Airport_Airline": "MAN-TOM",
-        "Quarter": "2025-Q1",
-        "Quota": 50
     },
     {
         "Airport_Airline": "BSL-U2",
@@ -5125,12 +5036,12 @@
     {
         "Airport_Airline": "AGP-W6",
         "Quarter": "2025-Q1",
-        "Quota": 26
+        "Quota": 25
     },
     {
         "Airport_Airline": "ALC-W6",
         "Quarter": "2025-Q1",
-        "Quota": 27
+        "Quota": 26
     },
     {
         "Airport_Airline": "AMM-W6",
@@ -5230,7 +5141,7 @@
     {
         "Airport_Airline": "FNC-W6",
         "Quarter": "2025-Q1",
-        "Quota": 17
+        "Quota": 21
     },
     {
         "Airport_Airline": "GHV-W6",
@@ -5246,11 +5157,6 @@
         "Airport_Airline": "GOA-W6",
         "Quarter": "2025-Q1",
         "Quota": 100
-    },
-    {
-        "Airport_Airline": "GRO-W6",
-        "Quarter": "2025-Q1",
-        "Quota": 50
     },
     {
         "Airport_Airline": "GYD-W6",
@@ -5285,7 +5191,7 @@
     {
         "Airport_Airline": "LCA-W6",
         "Quarter": "2025-Q1",
-        "Quota": 34
+        "Quota": 30
     },
     {
         "Airport_Airline": "LGW-W6",
@@ -5300,7 +5206,7 @@
     {
         "Airport_Airline": "LPA-W6",
         "Quarter": "2025-Q1",
-        "Quota": 14
+        "Quota": 18
     },
     {
         "Airport_Airline": "LPL-W6",
@@ -5320,7 +5226,7 @@
     {
         "Airport_Airline": "MLA-W6",
         "Quarter": "2025-Q1",
-        "Quota": 27
+        "Quota": 39
     },
     {
         "Airport_Airline": "MXP-W6",
@@ -5348,11 +5254,6 @@
         "Quota": 50
     },
     {
-        "Airport_Airline": "PMI-W6",
-        "Quarter": "2025-Q1",
-        "Quota": 6
-    },
-    {
         "Airport_Airline": "QSR-W6",
         "Quarter": "2025-Q1",
         "Quota": 50
@@ -5363,14 +5264,9 @@
         "Quota": 100
     },
     {
-        "Airport_Airline": "RHO-W6",
-        "Quarter": "2025-Q1",
-        "Quota": 12
-    },
-    {
         "Airport_Airline": "RMO-W6",
         "Quarter": "2025-Q1",
-        "Quota": 40
+        "Quota": 60
     },
     {
         "Airport_Airline": "RUH-W6",
@@ -5380,7 +5276,7 @@
     {
         "Airport_Airline": "SKG-W6",
         "Quarter": "2025-Q1",
-        "Quota": 36
+        "Quota": 65
     },
     {
         "Airport_Airline": "SKP-W6",
@@ -5430,15 +5326,10 @@
     {
         "Airport_Airline": "VLC-W6",
         "Quarter": "2025-Q1",
-        "Quota": 25
+        "Quota": 20
     },
     {
         "Airport_Airline": "WAW-W6",
-        "Quarter": "2025-Q1",
-        "Quota": 50
-    },
-    {
-        "Airport_Airline": "ADB-XQ",
         "Quarter": "2025-Q1",
         "Quota": 50
     },
@@ -5447,8 +5338,6 @@
         "Quarter": "2025-Q1",
         "Quota": 50
     }
-
-
 
         
 ]
