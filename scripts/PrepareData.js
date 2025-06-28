@@ -208,14 +208,15 @@ function prepareInterviewData() {
   for (i = 0; i < flight_list_full.length; i++) {
    
     //special for BUD
-    if (flight_list_full[i].Flight.substring(0,3) == "TOM") flight_list_full[i].AirlineCode = "TOM";
+    if (flight_list_full[i].Month == "06") {
+      if (flight_list_full[i].Flight.substring(0,3) == "TOM") flight_list_full[i].AirlineCode = "TOM";
 
-    if ((flight_list_full[i].Flight.substring(0,3) == "EZY") 
-      || (flight_list_full[i].Flight.substring(0,3) == "EJU") 
-    || (flight_list_full[i].Flight.substring(0,3) == "EZS")) flight_list_full[i].AirlineCode = "U2";
+      if ((flight_list_full[i].Flight.substring(0,3) == "EZY") 
+        || (flight_list_full[i].Flight.substring(0,3) == "EJU") 
+      || (flight_list_full[i].Flight.substring(0,3) == "EZS")) flight_list_full[i].AirlineCode = "U2";
+    }
 
     let flight = flight_list_full[i];
-    
     //airport_airline
     var airport_airline = flight.Dest + "-" + flight.AirlineCode; //code for compare
     flight.Airport_Airline = airport_airline;
