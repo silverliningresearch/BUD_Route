@@ -6361,12 +6361,12 @@
         "Quota": 100
     },
     {
-        "Airport_Airline": "ARN-DY",
+        "Airport_Airline": "ARN-D8",
         "Quarter": "2025-Q3",
         "Quota": 50
     },
     {
-        "Airport_Airline": "CPH-DY",
+        "Airport_Airline": "CPH-D8",
         "Quarter": "2025-Q3",
         "Quota": 50
     },
@@ -6911,7 +6911,7 @@
         "Quota": 50
     },
     {
-        "Airport_Airline": "NAP-W6",
+        "Airport_Airline": "NAP-W4",
         "Quarter": "2025-Q3",
         "Quota": 50
     },
@@ -7166,7 +7166,7 @@
         "Quota": 22
     },
     {
-        "Airport_Airline": "MXP-W6",
+        "Airport_Airline": "MXP-W4",
         "Quarter": "2025-Q3",
         "Quota": 50
     },

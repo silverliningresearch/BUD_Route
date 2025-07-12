@@ -189,6 +189,47 @@ function prepareInterviewData() {
 
         interview.Airport_Airline =   airport_code + "-" + airline_code ;
         interview.InterviewEndDate =   interview["Interview_Date"] ;
+
+        //correction for EZS / EC
+        if (currentQuarter == "2025-Q3") 
+        {
+            if ((interview.Airport_Airline == "BSL-EZS") 
+              || (interview.Airport_Airline == "BSL-EJU")
+              || (interview.Airport_Airline == "BSL-EZY"))
+            {
+                interview.Airport_Airline = "BSL-EC";
+            }
+
+            if ((interview.Airport_Airline == "CDG-EZS") 
+              || (interview.Airport_Airline == "CDG-EJU")
+              || (interview.Airport_Airline == "CDG-EZY"))
+            {
+                interview.Airport_Airline = "CDG-EC";
+            }
+
+            if ((interview.Airport_Airline == "GVA-EZS") 
+              || (interview.Airport_Airline == "GVA-EJU")
+              || (interview.Airport_Airline == "GVA-EZY"))
+            {
+                interview.Airport_Airline = "GVA-EC";
+            }
+
+            if ((interview.Airport_Airline == "LGW-EZS") 
+              || (interview.Airport_Airline == "LGW-EJU")
+              || (interview.Airport_Airline == "LGW-EZY"))
+            {
+                interview.Airport_Airline = "LGW-EC";
+            }
+
+          if ((interview.Airport_Airline == "LYS-EZS") 
+              || (interview.Airport_Airline == "LYS-EJU")
+              || (interview.Airport_Airline == "LYS-EZY"))
+            {
+                interview.Airport_Airline = "LYS-EC";
+            }
+
+        }
+
         interview_data.push(interview);
       }
       else{
@@ -208,13 +249,14 @@ function prepareInterviewData() {
   for (i = 0; i < flight_list_full.length; i++) {
    
     //special for BUD
-    if (flight_list_full[i].Month == "06") {
-      if (flight_list_full[i].Flight.substring(0,3) == "TOM") flight_list_full[i].AirlineCode = "TOM";
+    if (flight_list_full[i].Flight.substring(0,3) == "TOM") flight_list_full[i].AirlineCode = "TOM";
 
-      if ((flight_list_full[i].Flight.substring(0,3) == "EZY") 
+    if ((flight_list_full[i].Flight.substring(0,3) == "EZY") 
         || (flight_list_full[i].Flight.substring(0,3) == "EJU") 
-      || (flight_list_full[i].Flight.substring(0,3) == "EZS")) flight_list_full[i].AirlineCode = "U2";
-    }
+        || (flight_list_full[i].Flight.substring(0,3) == "EZS")
+        || (flight_list_full[i].Flight.substring(0,3) == "EC")
+    ) flight_list_full[i].AirlineCode = "EC";
+
 
     let flight = flight_list_full[i];
     //airport_airline
