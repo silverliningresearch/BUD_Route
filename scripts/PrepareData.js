@@ -187,9 +187,19 @@ function prepareInterviewData() {
         var airline_code = ""
         if (interview["AirlineCode"])  airline_code = interview["AirlineCode"];
 
+        //correction for EZS
+        if (airline_code.substring(0,3) == "EZY" || airline_code.substring(0,3) == "EJU" || airline_code.substring(0,3) == "EZS")
+        {
+          airline_code = airline_code.substring(0,3);
+          // console.log("airline_code: ", airline_code);
+
+        }
+
+
         interview.Airport_Airline =   airport_code + "-" + airline_code ;
         interview.InterviewEndDate =   interview["Interview_Date"] ;
 
+          
         //correction for EZS / EC
         if (currentQuarter == "2025-Q3") 
         {
