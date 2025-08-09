@@ -238,6 +238,11 @@ function prepareInterviewData() {
                 interview.Airport_Airline = "LYS-EC";
             }
 
+          if (interview.Airport_Airline == "VCE-W4") 
+          {
+              interview.Airport_Airline = "VCE-W6";
+          }
+
         }
 
         interview_data.push(interview);
