@@ -7334,7 +7334,7 @@
         "Quota": 150
     },
     {
-        "Airport_Airline": "ARN-DY",
+        "Airport_Airline": "ARN-D8",
         "Quarter": "2025-Q4",
         "Quota": 50
     },
@@ -7411,13 +7411,9 @@
     {
         "Airport_Airline": "BFS-FR",
         "Quarter": "2025-Q4",
-        "Quota": 50
+        "Quota": 100
     },
-    {
-        "Airport_Airline": "BFS-FR",
-        "Quarter": "2025-Q4",
-        "Quota": 50
-    },
+
     {
         "Airport_Airline": "BGY-FR",
         "Quarter": "2025-Q4",
@@ -7554,7 +7550,7 @@
         "Quota": 50
     },
     {
-        "Airport_Airline": "CPH-DY",
+        "Airport_Airline": "CPH-D8",
         "Quarter": "2025-Q4",
         "Quota": 50
     },
@@ -7633,15 +7629,11 @@
         "Quarter": "2025-Q4",
         "Quota": 50
     },
+
     {
         "Airport_Airline": "EDI-FR",
         "Quarter": "2025-Q4",
-        "Quota": 50
-    },
-    {
-        "Airport_Airline": "EDI-FR",
-        "Quarter": "2025-Q4",
-        "Quota": 50
+        "Quota": 100
     },
     {
         "Airport_Airline": "EIN-W6",
@@ -7871,18 +7863,14 @@
     {
         "Airport_Airline": "MAN-FR",
         "Quarter": "2025-Q4",
-        "Quota": 50
+        "Quota": 100
     },
     {
         "Airport_Airline": "MAN-LS",
         "Quarter": "2025-Q4",
         "Quota": 50
     },
-    {
-        "Airport_Airline": "MAN-FR",
-        "Quarter": "2025-Q4",
-        "Quota": 50
-    },
+
     {
         "Airport_Airline": "MLA-FR",
         "Quarter": "2025-Q4",
@@ -8088,15 +8076,11 @@
         "Quarter": "2025-Q4",
         "Quota": 50
     },
+
     {
         "Airport_Airline": "STN-FR",
         "Quarter": "2025-Q4",
-        "Quota": 50
-    },
-    {
-        "Airport_Airline": "STN-FR",
-        "Quarter": "2025-Q4",
-        "Quota": 50
+        "Quota": 100
     },
     {
         "Airport_Airline": "STR-EW",

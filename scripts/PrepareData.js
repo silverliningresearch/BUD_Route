@@ -252,6 +252,7 @@ function prepareInterviewData() {
         //correction for EZS / EC
         if (currentQuarter == "2025-Q4") 
         {
+
             if ((interview.Airport_Airline == "BSL-EZS") 
               || (interview.Airport_Airline == "BSL-EJU")
               || (interview.Airport_Airline == "BSL-EZY"))
@@ -302,7 +303,17 @@ function prepareInterviewData() {
             if (interview.Airport_Airline == "BFS-RK") 
             {
                 interview.Airport_Airline = "BFS-FR";
-            }                          
+            }      
+            
+            if ((interview.Airport_Airline == "BOD-EJU") )
+            {
+                interview.Airport_Airline = "BOD-EC";
+            }
+            
+            if ((interview.Airport_Airline == "NTE-EJU") )
+            {
+                interview.Airport_Airline = "NTE-EC";
+            }
         }
 
         interview_data.push(interview);
