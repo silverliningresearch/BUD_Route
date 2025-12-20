@@ -92,6 +92,10 @@ function initCurrentTimeVars() {
         total_quota =11550;
         break;           
 
+    case "2025-Q4":      
+        total_quota =10150;
+        break;  
+
         default:
       total_quota = 1;  
       break;
