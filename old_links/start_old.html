@@ -9,9 +9,11 @@
     <script src="scripts/PrepareData.js"></script>
 		<script src="scripts/CalculateData.js"></script>
     <script src="scripts/flight_search.js"></script>
-    <!-- <script type="text/javascript" src="https://silverliningresearch.github.io/daily_plan_data_alc/BUD_Route/data/interview_statistics.js"></script>  -->
-    <script type="text/javascript" src="https://silverliningresearch.github.io/daily_plan_data_sur_v3/BUD_Route/interview_statistics.js"></script> 
 
+    <!-- <script type="text/javascript" src="https://silverliningresearch.github.io/daily_plan_data_alc/BUD_Route/data/interview_data.js"></script>  -->
+    <script type="text/javascript" src="https://silverliningresearch.github.io/daily_plan_data_alc/BUD_Route/data/interview_statistics.js"></script> 
+
+    
     <link href="css/styles.css" rel ="stylesheet" type="text/css" />
     <style>
       .table-font {
@@ -154,19 +156,17 @@
         document.getElementById("overall_status").innerHTML =overall_status + " | " + "Data updated at " + download_time;
      }
     
-    function start_new_interview() {
-     
+      function start_new_interview() {
       console.log("start_new_interview");
-     
-      let url = "https://silverliningresearch.github.io/BUD_Route/survey.html?";
       
-      //
-      if (flightForInterview && flightForInterview.Flight) url = url + "urlVar01=" + flightForInterview.Flight;
-      if (flightForInterview && flightForInterview.DestName) url = url + "&urlVar02=" + flightForInterview.DestName;
-      if (flightForInterview && flightForInterview.Dest) url = url + "&urlVar03=" + flightForInterview.Dest;
-      if (flightForInterview && flightForInterview.Airline) url = url + "&urlVar04=" + flightForInterview.Airline;
+      let url = "https://survey.alchemer.eu/s3/90361288/Route?";
       
-      localStorage.clear();
+      if (flightForInterview && flightForInterview.Flight) url = url + "flight=" + flightForInterview.Flight;
+      if (flightForInterview && flightForInterview.AirlineCode) url = url + "&airlinecode=" + flightForInterview.AirlineCode;
+      if (flightForInterview && flightForInterview.Airline) url = url + "&airlinename=" + flightForInterview.Airline;
+      if (flightForInterview && flightForInterview.Dest) url = url + "&dest=" + flightForInterview.Dest;
+      if (flightForInterview && flightForInterview.DestName) url = url + "&destname=" + flightForInterview.DestName;
+
       document.getElementById('inputFlightCodeID').value = "";
       window.location.href = url;
     }
@@ -180,7 +180,6 @@
     </script>
   </head>
   <body>
-
     <h4  style="text-align:center;">BUD Route Survey</h4>
     </br>
   <!-- </br></br></br> -->
