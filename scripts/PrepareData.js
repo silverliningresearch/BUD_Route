@@ -179,8 +179,6 @@ function prepareInterviewData() {
   download_time = interview_data_full[0].download_time;
   for (i = 0; i < interview_data_full.length; i++) {
     var interview = interview_data_full[i];
-
-
     var interview_month = interview["Interview_Date"].substring(5,7);//"2023-04-03 06:18:18"
     var interview_quarter = getQuarterFromMonth(interview["Interview_Date"].substring(5,7), interview["Interview_Date"].substring(0,4));
     
@@ -190,6 +188,7 @@ function prepareInterviewData() {
       )
     {
       if (interview["Dest"]) {
+
         var airport_code = interview["Dest"];
         
         var airline_code = ""
