@@ -358,23 +358,19 @@ function prepareInterviewData() {
                 interview.Airport_Airline = "LYS-EC";
             }
   
-            if (interview.Airport_Airline == "EDI-RK") 
-            {
-                interview.Airport_Airline = "EDI-FR";
-            }   
-            if (interview.Airport_Airline == "MAN-RK") 
-            {
-                interview.Airport_Airline = "MAN-FR";
-            }           
-            if (interview.Airport_Airline == "STN-RK") 
-            {
-                interview.Airport_Airline = "STN-FR";
-            }  
-            if (interview.Airport_Airline == "BFS-RK") 
-            {
-                interview.Airport_Airline = "BFS-FR";
-            }      
-            
+            // if (interview.Airport_Airline == "EDI-RK") 
+            // {
+            //     interview.Airport_Airline = "EDI-FR";
+            // }   
+            // if (interview.Airport_Airline == "MAN-RK") 
+            // {
+            //     interview.Airport_Airline = "MAN-FR";
+            // }           
+            // if (interview.Airport_Airline == "STN-RK") 
+            // {
+            //     interview.Airport_Airline = "STN-FR";
+            // }  
+             
             if ((interview.Airport_Airline == "BOD-EJU") )
             {
                 interview.Airport_Airline = "BOD-EC";
