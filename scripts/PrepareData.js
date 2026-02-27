@@ -380,6 +380,11 @@ function prepareInterviewData() {
             {
                 interview.Airport_Airline = "NTE-EC";
             }
+
+            if ((interview.Airport_Airline == "BSL-EZS") )
+            {
+                interview.Airport_Airline = "BSL-EC";
+            }
         }
 
         interview_data.push(interview);
