@@ -218,7 +218,7 @@ function prepareInterviewData() {
         interview.Airport_Airline =   airport_code + "-" + airline_code ;
         interview.InterviewEndDate =   interview["Interview_Date"] ;
         
-        interview.Airport_Airline = rount_mapping(currentQuarter, interview.Airport_Airline)
+        interview.Airport_Airline = route_mapping(currentQuarter, interview.Airport_Airline)
   
         interview_data.push(interview);
       }

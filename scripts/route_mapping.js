@@ -1,4 +1,4 @@
-function rount_mapping(currentQuarter, currentRoute) {
+function route_mapping(currentQuarter, currentRoute) {
 
   var newRoute = currentRoute;
   if (currentQuarter == "2025-Q3") 
